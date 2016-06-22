@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!--
+  Copyright (c) 2016, Will Streuli. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+
+    <!--Polymer Items-->
+    <link rel="import" href="packages/polymer_elements/paper_material.html">
+    <link rel="import" href="packages/polymer_elements/paper_button.html">
+
+</head>
+
+<body>
+
+  <div id="output"></div>
+  <br><br>
+
+
+    <div id="main-content">
+        <paper-material elevation="1" style="margin: 0 auto; width: 400px;">
+        <table id="numbers" style="margin: 10px;">
+            <tr>
+                <th>OUTPUT</th>
+                <th></th>
+                <th></th>
+                <th><paper-button class="action-button" id="ac">AC</paper-button></th>
+            </tr>
+            <tr>
+                <td><paper-button class="number-button" id="7">7</paper-button></td>
+                <td><paper-button class="number-button" id="8">8</paper-button></td>
+                <td><paper-button class="number-button" id="9">9</paper-button></td>
+                <td><paper-button class="action-button" id="divide">/</paper-button></td>
+            </tr>
+            <tr>
+                <td><paper-button class="number-button" id="4">4</paper-button></td>
+                <td><paper-button class="number-button" id="5">5</paper-button></td>
+                <td><paper-button class="number-button" id="6">6</paper-button></td>
+                <td><paper-button class="action-button" id="times">*</paper-button></td>
+            </tr>
+            <tr>
+                <td><paper-button class="number-button" id="1">1</paper-button></td>
+                <td><paper-button class="number-button" id="2">2</paper-button></td>
+                <td><paper-button class="number-button" id="3">3</paper-button></td>
+                <td><paper-button class="action-button" id="take">-</paper-button></td>
+            </tr>
+            <tr>
+                <td><paper-button class="number-button" id="0">0</paper-button></td>
+                <td><paper-button class="action-button" id="point">.</paper-button></td>
+                <td><paper-button class="equals-button" id="equals">=</paper-button></td>
+                <td><paper-button class="action-button" id="add">+</paper-button></td>
+            </tr>
+        </table>
+        </paper-material>
+    </div>
+
+</body>
+</html>
